@@ -2,22 +2,22 @@
     "blogApp": {
         "tag" : {
             "home": {
-                "title": "Tags",
-                "createLabel": "创建新 Tag",
-                "createOrEditLabel": "创建或编辑 Tag",
-                "search": "查找 Tag"
+                "title": "标签",
+                "createLabel": "创建新标签",
+                "createOrEditLabel": "创建或编辑标签",
+                "search": "查找"
             },
-            "created": "Tag {{ param }} 创建成功",
-            "updated": "Tag {{ param }} 更新成功",
-            "deleted": "Tag {{ param }} 删除成功",
+            "created": "标签 {{ param }} 创建成功",
+            "updated": "标签 {{ param }} 更新成功",
+            "deleted": "标签 {{ param }} 删除成功",
             "delete": {
-                "question": "你确定要删除 Tag {{ id }} 吗？"
+                "question": "你确定要删除标签 {{ id }} 吗？"
             },
             "detail": {
-                "title": "Tag"
+                "title": "标签"
             },
-            "name": "Name",
-            "entry": "Entry"
+            "name": "名字",
+            "entry": "文章"
         }
     }
 }

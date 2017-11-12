@@ -7,9 +7,9 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "数据",
-                "blog": "Blog",
-                "entry": "Entry",
-                "tag": "Tag",
+                "blog": "博客",
+                "entry": "文章",
+                "tag": "标签",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

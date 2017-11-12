@@ -2,25 +2,25 @@
     "blogApp": {
         "entry" : {
             "home": {
-                "title": "Entries",
-                "createLabel": "创建新 Entry",
-                "createOrEditLabel": "创建或编辑 Entry",
-                "search": "查找 Entry"
+                "title": "文章",
+                "createLabel": "创建新文章",
+                "createOrEditLabel": "创建或编辑文章",
+                "search": "查找"
             },
-            "created": "Entry {{ param }} 创建成功",
-            "updated": "Entry {{ param }} 更新成功",
-            "deleted": "Entry {{ param }} 删除成功",
+            "created": "标识为 {{ param }} 的文章创建成功",
+            "updated": "标识为  {{ param }} 的文章更新成功",
+            "deleted": "标识为 {{ param }} 的文章删除成功",
             "delete": {
-                "question": "你确定要删除 Entry {{ id }} 吗？"
+                "question": "你确定要删除文章 {{ id }} 吗？"
             },
             "detail": {
-                "title": "Entry"
+                "title": "文章"
             },
-            "title": "Title",
-            "content": "Content",
-            "date": "Date",
-            "blog": "Blog",
-            "tag": "Tag"
+            "title": "标题",
+            "content": "内容",
+            "date": "创建时间",
+            "blog": "所属博客",
+            "tag": "标签"
         }
     }
 }
