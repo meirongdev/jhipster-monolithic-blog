@@ -43,6 +43,11 @@ public class CacheConfiguration {
             cm.createCache(me.wanfan.showcase.jhipster.blog.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(me.wanfan.showcase.jhipster.blog.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(me.wanfan.showcase.jhipster.blog.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(me.wanfan.showcase.jhipster.blog.domain.Blog.class.getName(), jcacheConfiguration);
+            cm.createCache(me.wanfan.showcase.jhipster.blog.domain.Entry.class.getName(), jcacheConfiguration);
+            cm.createCache(me.wanfan.showcase.jhipster.blog.domain.Entry.class.getName() + ".tags", jcacheConfiguration);
+            cm.createCache(me.wanfan.showcase.jhipster.blog.domain.Tag.class.getName(), jcacheConfiguration);
+            cm.createCache(me.wanfan.showcase.jhipster.blog.domain.Tag.class.getName() + ".entries", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
