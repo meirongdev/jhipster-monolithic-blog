@@ -2,6 +2,7 @@ package me.wanfan.showcase.jhipster.blog.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
 import me.wanfan.showcase.jhipster.blog.domain.Entry;
+import me.wanfan.showcase.jhipster.blog.security.SecurityUtils;
 
 import me.wanfan.showcase.jhipster.blog.repository.EntryRepository;
 import me.wanfan.showcase.jhipster.blog.repository.search.EntrySearchRepository;
@@ -104,7 +105,7 @@ public class EntryResource {
     @Timed
     public ResponseEntity<List<Entry>> getAllEntries(@ApiParam Pageable pageable) {
         log.debug("REST request to get a page of Entries");
-        Page<Entry> page = entryRepository.findAll(pageable);
+        Page<Entry> page = entryRepository.findByBlogUserLoginOrderByDateDesc(SecurityUtils.getCurrentUserLogin(), pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/entries");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
